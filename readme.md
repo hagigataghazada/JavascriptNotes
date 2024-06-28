@@ -817,7 +817,7 @@ let falseValue = 2 > 12;
 console.log(falseValue); // false
 ```
 
-#### Her zaman true dəyərlər
+### Her zaman true dəyərlər
 
 **bütün ədədlər (pozitiv və neqativ ədədlər), 0 daxil deyil**
 
@@ -825,7 +825,7 @@ console.log(falseValue); // false
 
 **true dəyəri**
 
-#### Hər zaman false dəyərlər
+### Hər zaman false dəyərlər
 
 **0**
 
