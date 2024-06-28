@@ -86,7 +86,7 @@ Xarici JS faylları çoxlu HTML faylları arasında təkrar istifadə oluna bil�
 ```
 # **Javascript Code Structure**
 
-# Statements(Codes)
+## Statements(Codes)
 
 Statement verilən bir təlimatdır. Statement nöqtəli vergüllə **";"(semicolon)** sonlandırılır. Bir sətrə çoxlu sayda statement-lar yaza bilərsiniz. Lakin daha oxunaqlı olması üçün her statement-in bir sətirdə yerləşməsi lazımdır. 
 
@@ -105,7 +105,7 @@ Javascriptdə statement-lar value, operator, keyword, comment-dən  ibarətdir.
 
 Statement-lar Javascript hərəkətini müəyyən etmək üçün **keyword**-lərlə başlayır. keyword-lərə misal  olaraq **let, var, const, if, for, function** göstərmək olar.
 
-# Operators
+## Operators
 
 Operatorlar(operators) toplama, çıxma, vurma, bölmə kimi əməliyyatlara icazə verən dəyərlər arasındakı simvollardır. Operatorların tipləri:
 
@@ -117,7 +117,7 @@ Operatorlar(operators) toplama, çıxma, vurma, bölmə kimi əməliyyatlara ica
 6. Ternary(Conditional) Operators
 7. Special Oprators
 
-## Arithmetic Operators
+### Arithmetic Operators
 
 1. `"+"` - addition
 2. `"-"` - substraction
@@ -137,7 +137,7 @@ let a = m + n;
 console.log(a); //Output: HelloWorld!
 ```
 
-## Assignment Operators
+### Assignment Operators
 
 1. `"="` (assign)  -  x=y same as "x=y"
 
@@ -161,7 +161,7 @@ let x = 10;
 x -= 5; // x = x - 5
 ```
 
-## Comparison(Relational) Operators
+### Comparison(Relational) Operators
 
 1. `"=="` - equal in value only
 2. `"==="` - equal in value and data type
@@ -178,7 +178,7 @@ console.log(3 != 2); //Output : true
 console.log(3 != 3); //Output : false
 ``` 
 
-## Logical Operators
+### Logical Operators
 
 1. `"&&"` - logical and, ampersand
 2. `"||"` - logical or, pipe
@@ -196,7 +196,7 @@ const check = 4<1 || 5>10; //false || false = false
 let check = 4>3; //true
 let check = !(4>3); //false
 ```
-## Unary Operators
+### Unary Operators
 
 1. Unary Minus (-)
 2. Increment (++)
@@ -204,7 +204,7 @@ let check = !(4>3); //false
 4. Addressof operator ( & )
 5. Sizeof()
 
-### Unary Minus
+#### Unary Minus
 
 Arqumentin, dəyərin işarəsini dəyişir. Pozitiv rəqəm neqativə, neqativ rəqəm pozitivə çevrilir. Minus (-) operatoru substraction (çıxma) operatorundan fərqlidir. Substraction operatoru iki dəyər tələb edir.
 
@@ -214,7 +214,7 @@ let n = -m;
 console.log(n); //Output: -10
 ```
 
-### Increment Operator  
+#### Increment Operator  
 
 1. Pre-increment (prefix)
 ```
@@ -262,18 +262,6 @@ console.log(num2--); //5
 console.log(num2); //4
 ```
 
-## Special Operators
-
-1. `"'?',':'"` - ternary, conditional operators
-2.  `","` - comma operator
-3. `"delete"` operator
-4. `"in"`
-5. `"intanceof"`
-6. `"new"`
-7. `"typeof"`
-8. `"void"`
-9. `"yield"`
-
 ### Ternary Operators
 
 Ternary Operators vəziyyət, şərt yaratmağa icazə verir.
@@ -301,6 +289,19 @@ number > 0
   ? console.log(`${number} is a positive number`)
   : console.log(`${number} is a negative number`) //Output
 ```
+
+### Special Operators
+
+1. `"'?',':'"` - ternary, conditional operators
+2.  `","` - comma operator
+3. `"delete"` operator
+4. `"in"`
+5. `"intanceof"`
+6. `"new"`
+7. `"typeof"`
+8. `"void"`
+9. `"yield"`
+
 
 ## Delete Operator
 Delete operatoru obyektdən property (dəyişəni) silir.
@@ -341,6 +342,16 @@ console.log(typeof num); // Output: number
 console.log(typeof str); // Output: string
 console.log(typeof bool); // Output: boolean
 console.log(typeof und); // Output: undefined
+```
+
+## Operator Presedence (Operator Üstünlüyü)
+
+Üstünlüyü daha yüksək olan operatorlar üstünlüyü aşağı olan operatorların operandlarına çevrilirlər. 
+
+```
+console.log(5 + 10 * 2); //5 + 20 = 25
+console.log(5 + 10 / 2); //5 + 5 = 10
+console.log(4 * 3 ** 2); //4 * 9 = 36
 ```
 
 ## Variables (Dəyişənlər)
@@ -397,17 +408,17 @@ let my-name-is = "Anar"
 1. camelCase 
 2. snake_case
 
-camelCase - sonrakı hər sözün ilk hərfi böyüklə yazılır. Məsələn, 
+**camelCase** - sonrakı hər sözün ilk hərfi böyüklə yazılır. Məsələn, 
 
 ```
 let myNameIs
 ```
-snake_case - bu adlandırma konvensiyasında sözləri ayırmaq üçün alt xətdən (underscore "_") istifadə olunur. 
+**snake_case** - bu adlandırma konvensiyasında sözləri ayırmaq üçün alt xətdən (underscore "_") istifadə olunur. 
 
 ```
 let my_name_is
 ``` 
-Constant Variable (dəyişməyən dəyər) - dəyərini dəyişməyən dəyişəndir. Sabit dəyişən **const** açar sözündən istifadə edilərək təyin edilir. 
+**Constant Variable (dəyişməyən dəyər)** - dəyərini dəyişməyən dəyişəndir. Sabit dəyişən **const** açar sözündən istifadə edilərək təyin edilir. 
 
 ```
 const pi = 3.14
@@ -479,190 +490,8 @@ Bir və ya bir neçə xarakterdən ibarət olub, **double quotes (qoşa dırnaql
 `We can also use backstick`
 ```
 
-### Numbers
+#### String birləşdirmə 
 
-Integers: mənfi(negative), 0(zero), müsbət(positive) ədədlər 
-Float-point: -3.5, -1.0, 1.1, 2.2 və s.
-
-### Boolean 
-
-Boolean true və ya false dəyərlərini qaytarır. 
-0, On, undefined, null, Nan, " " false dəyərini qaytarır.
-
-### Undefined 
-
-Eger biz dəyişənə(variable) dəyər(value) vermiriksə, dəyər(value) **undefined** olur. 
-
-```
-let name;
-console.log(name); // undefined
-```
-### Null 
-
-Null (empty value or no value) boş dəyər deməkdir. 
-
-```
-let name = null;
-console.log(name); // null
-```
-### Symbol
-
-Simvol konstruktoru tərəfindən yaradıla bilən unikal dəyərdir.
-
-## Non-Primitive Data Tipləri
-
-Non-primitiv data tipləri **modifiable(mutable)**, yəni dəyişdirilə bilən data tipləridir.
-
-1. Array
-2. Object
-
-Məsələn, aşağıdakı array-de dəyərlərdən birini dəyişək
-```
-let numbers = [1, 2, 3];
-numbers[1] = 5;
-console.log(numbers); // [1, 5, 3]
-```
-
-Non-primitive data tipləri dəyərlərinə görə müqayisə edilə bilməz. (hətta bu data tipləri eyni xüsusiyyətlərə və dəyərlərə malik olasalar belə ) 
-
-```
-let nums = [1, 2, 3];
-let numbers = [1, 2, 3];
-cosole.log(nums == numbers); //false
-
-let personOne = {
-  name: 'Jony',
-  job: 'teacher'
-}
-let personTwo = {
-  name: 'Jony',
-  job: 'teacher'
-}
-console.log(personOne == personTwo); //false
-```
-
-Onlar referans yerlərinə görə  müqayisə edilir. İki obyekt  eyni obyektı istinad etdikdı bərabır olurlar.
-
-```
-let personOne = {
-  name: 'Jony',
-  job: 'teacher'
-}
-let personTwo = personOne;
-console.log(personOne == personTwo); //true
-```
-
-### Data tiplərinin dəyişdirilməsi (Casting)
-
-Bir data tipini başqa bir data tipinə dəyişmək mümkündür. Bu zaman **parseInt(), parseFloat(), Number(), +sign, str()** metodlarından  istifadə edirik. 
-
-#### String to Int 
-Biz string number-ı number-a çevirə bilərik. Dırnaq içərisində hər hansı integer number string number-dır. String number-a '2' '10' və s. misal göstərmək olar. String number-ı number-a bu metodlarla çevirə bilərik: **parseInt(), Number(), + sign**. 
-
-```
-let number = '5';
-let numInteger = parseInt(number);
-console.log(numInteger); //5
-
-let num = '5';
-let numberInt = Number(num);
-console.log(numberInt);  //5
-
-let num = '5';
-let numInt = +num;
-console.log(numberInt); //5
-
-```
-
-#### String to Float
-String float number-ı float number-a çevirə bilərik. Dırnaq içərisində yazılan hər hansı float number string number-dır. String float number-a '2.4', '5,6'  və s. misal göstərmək olar. String float number-ı float number-a bu metodlarla çevirmək olar: **parseFloat(), Number(), + sign**. 
-
-```
-let num = '5,5';
-let numToFloat = parseFloat();
-console.log(numToFloat);
-
-let number =  '6,7';
-let numFloat = Number(number);
-console.log(numFloat);
-
-let num = '6,5';
-let numFloat = +num;
-console.log(numFloat);
-```
-
-#### Float to Int 
-Float number-ı Integer-a çevirmək üçün **parseInt()** metodundan istifadə edirik.
-
-```
-
-```
-### Array bax!!!!
-
-Array kvadrat mötərizədə (square bracket) yerləşən data dəyərlərdən ibarətdir. Arrayler eyni və ya müxtəlif data tiplərindən ibarət ola bilər. Array dəyərlərinə onların indeksi ilə istinad edilir. İndeks 0-dan başlayır. Arrayin 1-ci elementinin indeksi 0, 2-ci elementin indeksi 1 və s. bu kimi davam edir. 
-
-```
-let arr = [1, 2, 3, 4, 5];
-console.log(arr[0]); // 1
-console.log(arr[1]); // 2
-arr[0] = 5;
-console.log(arr); // [5, 2, 3, 4, 5]
-```
-
-### Math Object 
-
-Math Objectin ədədlərlə işləmək üçün çoxlu metodları vardır. 
-
-**Math.round** - ədədləri yuvarlaqlaşdırmaq üçün istifadə olunur. 
-
-```
-let a = 5.5;
-console.log(Math.round(a)); // 6
-let b = 3.3;
-console.log(Math.round(b)); // 3
-```
-
-**Math.floor** - ədədləri kiçiyə doğru yuvarlaqlaşdırır. 
-
-```
-let a = 3.6;
-console.log(Math.floor(a)); // 3
-```
-**Math.ceil** - ədədləri böyüyə doğru yuvarlaqlaşdırır. 
-
-```
-let a = 3.3;
-console.log(Math.ceil(a)); // 4
-```
-
-**Math.min** - Minimum dəyəri qaytarır.
-
-```
-console.log(Math.min(-2, 3, 4, -5)); // -5
-```
-**Math.max** - Maximum dəyəri qaytarır.
-
-```
-console.log(Math.max(-5, 5, 14, 1)); // 14
-```
-### Random Number Generator
-
-**Math.random** - konsola random ədəd çıxarır.
-```
-const randomNumber = Math.random(); // 0 və 0.999999 arasında rəqəm çıxarır. 
-console.log(randomNumber); 
-```
-```
-let randomNum = Math.random(); 
-let numZeroToTen = randomNum * 11;
-console.log(numZeroToTen); // min 0 və max 10.99 arasında random ədəd verir.
-```
-```
-const num = Math.floor(Math.random() * 11); //konsola 0 və 10 arasında random ədəd çıxarır.
-console.log(num); // min 0 max 10 arasında random ədəd verir.  
-```
-
-### String birləşdirmə 
 Stringləri birləşdirməyin müxtəlif yolları vardır. Bunlardan biri addition operatorundan istifade etməklə :
 
 ```
@@ -679,7 +508,7 @@ const paragaraph = "My name is John Doe. I live in Berlin, Germany. I am 25 year
 My profession is Doctor. My family consist of 5 people: my father, mother, sister, brother and me. My father is doctor too. /
 ```
 
-Escape Sequences in Strings
+**Escape Sequences in Strings**
 
 1. **`\n`** - new line
 2. **`\t`** - tab, means 8 spaces
@@ -691,14 +520,18 @@ Escape Sequences in Strings
 let name = prompt('Ad daxil edin');
 console.log(`Hello ${name} necesen?`);
 ```
-### String Methods
+
+#### String Methods
 
 1. ***length*** - Boşluq daxil xarakterlərin sayını,  deyişənin uzunluğunu göstərir. 
+
 ```
 let name = 'John';
 console.log(name.length); //Output: 4
 ```
+
 2. ***Index*** - String-dəki xarakterləri əldə etmək üçün ***index***-dən istifadə olunur. index 0-dan başlayır. stringdəki 1-ci xarakterin indeksi 0-dır. Sonuncu indeks "length - 1"-ə bərabərdir. 
+
 ```
 let string = 'Trust';
 let firstLetter = string[0];
@@ -709,22 +542,30 @@ let lastIndex = string.length - 1;
 console.log(lastIndex); //Output: 4
 console.log(string[lastIndex]); //Output: t
 ```
+
 3. ***toUpperCase()*** - bu metod stringi böyük hərflə yazdırır.
+
 ```
 let string = 'John';
 console.log(string.toUpperCase()); //JOHN
 ```
+
 4. ***toLowerCase()*** - bu metod stringi kiçik hərflə yazdırır.
+
 ```
 let string = 'JOHN';
 console.log(string.toLowercase()); //john
 ```
+
 5. ***substr()*** - Iki arqument alır, başlanğıc indeksi və bölünən xarakterlərin sayı. 
+
 ```
 let string = 'butterfly';
 console.log(string.substr(6, 3)); //fly   (yəni 6-dan başla 3-nü böl/götür)
 ```
+
 6. ***substring()*** - Iki arqument alır, başlanğıc indeksi və dayanma indeksi. Lakin dayanma indeksindəki xarakter daxil deyil. 
+
 ```
 let string = 'butterfly';
 console.log(string.substring(0, 6)); //butter  (yəni, 0-dan başla 6-ya çatanda dayan/6-cı daxil deyil)
@@ -733,7 +574,9 @@ başlayaraq 6-dan sonrakıları götürür/bölür)
 console.log(string.substring(6, 9)); //fly (burada isə dayanma indeksi 9 bildirilib çünki 8 yazsaq dayanma indeksi daxil olmadığından 
 sonuncu indeksdəki elementi götürməyəcək, 9 yazırıq ki, 8-ci indeksi götürsün)
 ```
+
 7. ***split()*** - stringi müəyyən edilmiş yerdə bölür.
+
 ```
 let string = '30 Days Of Javascript';
 console.log(string.split()); // Array-e çevirir. ["30 Days Of Javascript"]
@@ -745,13 +588,16 @@ console.log(firstName.split('')); // hərf-hərf bölür. ["J", "o", "h", "n"]
 let countries = 'Azerbaijan, Turkey, Russia, Georgia, Iran';
 console.log(countries.split(',')); //Array daxilindəki elementləri vergüllə bölür. ["Azerbaijan", "Turkey", "Russia", "Georgia", "Iran"]
 ```
+
 8. ***trim()*** - Başlanğıcda və sonda olan boşluqları silir.
+
 ```
 let string = ' Hello ';
 console.log(string.trim()); //Hello   
 //və ya
 console.log(string.trim(' '));
 ```
+
 9. ***includes()*** - Elementin string daxilində olub-olmadığını yoxlayır. Bu metod boolean qaytarır. Əgər element stringdə varsa, true, yoxdursa false qaytarır. 
 
 ```
@@ -845,8 +691,263 @@ let string = 'Day';
 console.log(string.repeat(2)); // DayDay
 ```
 
+#### Data tiplərinin dəyişdirilməsi (Casting)
+
+Bir data tipini başqa bir data tipinə dəyişmək mümkündür. Bu zaman **parseInt(), parseFloat(), Number(), +sign, str()** metodlarından  istifadə edirik. 
+
+#### String to Int 
+Biz string number-ı number-a çevirə bilərik. Dırnaq içərisində hər hansı integer number string number-dır. String number-a '2' '10' və s. misal göstərmək olar. String number-ı number-a bu metodlarla çevirə bilərik: **parseInt(), Number(), + sign**. 
+
+```
+let number = '5';
+let numInteger = parseInt(number);
+console.log(numInteger); //5
+
+let num = '5';
+let numberInt = Number(num);
+console.log(numberInt);  //5
+
+let num = '5';
+let numInt = +num;
+console.log(numberInt); //5
+
+```
+
+#### String to Float
+String float number-ı float number-a çevirə bilərik. Dırnaq içərisində yazılan hər hansı float number string number-dır. String float number-a '2.4', '5,6'  və s. misal göstərmək olar. String float number-ı float number-a bu metodlarla çevirmək olar: **parseFloat(), Number(), + sign**. 
+
+```
+let num = '5,5';
+let numToFloat = parseFloat();
+console.log(numToFloat);
+
+let number =  '6,7';
+let numFloat = Number(number);
+console.log(numFloat);
+
+let num = '6,5';
+let numFloat = +num;
+console.log(numFloat);
+```
+
+#### Float to Int 
+Float number-ı Integer-a çevirmək üçün **parseInt()** metodundan istifadə edirik.
+
+```
+let num = 9.81;
+let numInt = parseInt(num);
+console.log(numInt); //9
+```
+
+### Numbers
+
+Integers: mənfi(negative), 0(zero), müsbət(positive) ədədlər 
+Float-point: -3.5, -1.0, 1.1, 2.2 və s.
+
+```
+let number = 10;
+console.log(number); // 10
+let floatNum = 2,5;
+console.log(floatNum); // 2.5
+```
+
+### Math Object 
+
+Math Objectin ədədlərlə işləmək üçün çoxlu metodları vardır. 
+
+**Math.round** - ədədləri yuvarlaqlaşdırmaq üçün istifadə olunur. 
+
+```
+let a = 5.5;
+console.log(Math.round(a)); // 6
+let b = 3.3;
+console.log(Math.round(b)); // 3
+```
+
+**Math.floor** - ədədləri kiçiyə doğru yuvarlaqlaşdırır. 
+
+```
+let a = 3.6;
+console.log(Math.floor(a)); // 3
+```
+**Math.ceil** - ədədləri böyüyə doğru yuvarlaqlaşdırır. 
+
+```
+let a = 3.3;
+console.log(Math.ceil(a)); // 4
+```
+
+**Math.min** - Minimum dəyəri qaytarır.
+
+```
+console.log(Math.min(-2, 3, 4, -5)); // -5
+```
+**Math.max** - Maximum dəyəri qaytarır.
+
+```
+console.log(Math.max(-5, 5, 14, 1)); // 14
+```
+### Random Number Generator
+
+**Math.random** - konsola random ədəd çıxarır.
+```
+const randomNumber = Math.random(); // 0 və 0.999999 arasında rəqəm çıxarır. 
+console.log(randomNumber); 
+```
+```
+let randomNum = Math.random(); 
+let numZeroToTen = randomNum * 11;
+console.log(numZeroToTen); // min 0 və max 10.99 arasında random ədəd verir.
+```
+```
+const num = Math.floor(Math.random() * 11); //konsola 0 və 10 arasında random ədəd çıxarır.
+console.log(num); // min 0 max 10 arasında random ədəd verir.  
+```
+
+### Boolean 
+
+Boolean true və ya false dəyərlərini qaytarır. 
+0, On, undefined, null, Nan, " " false dəyərini qaytarır.
+
+```
+let trueValue = 5 < 10;
+console.log(trueValue); // true
+
+let falseValue = 2 > 12;
+console.log(falseValue); // false
+```
+
+#### Her zaman true dəyərlər
+
+**bütün ədədlər (pozitiv və neqativ ədədlər), 0 daxil deyil**
+
+**bütün stringlər (boş string daxil deyil(''))**
+
+**true dəyəri**
+
+#### Hər zaman false dəyərlər
+
+**0**
+
+**0n**
+
+**null**
+
+**undefined**
+
+**NaN**
+
+**false dəyəri**
+
+**'', "", ``**
+
+### Undefined 
+
+Eger biz dəyişənə(variable) dəyər(value) vermiriksə, dəyər(value) **undefined** olur. 
+
+```
+let name;
+console.log(name); // undefined
+```
+
+### Null 
+
+Null (empty value or no value) boş dəyər deməkdir. 
+
+```
+let name = null;
+console.log(name); // null
+```
+
+### Symbol
+
+Simvol konstruktoru tərəfindən yaradıla bilən unikal dəyərdir.
+
+## Window Methods
+
+Window alert() method - bu metod müəyyən mesaj və OK düyməsi olan xəbədarlıq qutusu göstərir. 
+
+```
+alert(message);
+
+alert("Hello World!");
+
+```
+Window prompt() method - bu metod iki arqument alır. İkinci arqument istəyə bağlıdır. Dəyər qəbul edən sorğu qutusudur.
+
+```
+prompt('required text', 'optional text');
+let number = prompt('enter a number');
+console.log(number);
+
+```
+
+Window confirm() method - bu metod müəyyən mesaj, OK və Cancel düymələri olan dialoq qutusunu göstərir. 
+
+```
+confirm('required text');
+let answer = confirm('Are you sure?');
+console.log(answer);
+```
+
+## Data Objects
 
 
+
+## Non-Primitive Data Tipləri
+
+Non-primitiv data tipləri **modifiable(mutable)**, yəni dəyişdirilə bilən data tipləridir.
+
+1. Array
+2. Object
+
+Məsələn, aşağıdakı array-de dəyərlərdən birini dəyişək
+```
+let numbers = [1, 2, 3];
+numbers[1] = 5;
+console.log(numbers); // [1, 5, 3]
+```
+
+Non-primitive data tipləri dəyərlərinə görə müqayisə edilə bilməz. (hətta bu data tipləri eyni xüsusiyyətlərə və dəyərlərə malik olasalar belə ) 
+
+```
+let nums = [1, 2, 3];
+let numbers = [1, 2, 3];
+cosole.log(nums == numbers); //false
+
+let personOne = {
+  name: 'Jony',
+  job: 'teacher'
+}
+let personTwo = {
+  name: 'Jony',
+  job: 'teacher'
+}
+console.log(personOne == personTwo); //false
+```
+
+Onlar referans yerlərinə görə  müqayisə edilir. İki obyekt  eyni obyektı istinad etdikdı bərabır olurlar.
+
+```
+let personOne = {
+  name: 'Jony',
+  job: 'teacher'
+}
+let personTwo = personOne;
+console.log(personOne == personTwo); //true
+```
+
+### Array bax!!!!
+
+Array kvadrat mötərizədə (square bracket) yerləşən data dəyərlərdən ibarətdir. Arrayler eyni və ya müxtəlif data tiplərindən ibarət ola bilər. Array dəyərlərinə onların indeksi ilə istinad edilir. İndeks 0-dan başlayır. Arrayin 1-ci elementinin indeksi 0, 2-ci elementin indeksi 1 və s. bu kimi davam edir. 
+
+```
+let arr = [1, 2, 3, 4, 5];
+console.log(arr[0]); // 1
+console.log(arr[1]); // 2
+arr[0] = 5;
+console.log(arr); // [5, 2, 3, 4, 5]
+```
 
 
 # Higher Order Function
